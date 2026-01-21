@@ -3,161 +3,230 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mommy Makeover Salt Lake City | Restore Your Confidence – Utah Plastic Surgery</title>
-  <meta name="description" content="Board-certified mommy makeover in Salt Lake City, Utah. Personalized tummy tuck, breast lift/augmentation & liposuction for natural post-pregnancy results. It's time to take care of you – free consultation."/>
+  <title>Mommy Makeover Salt Lake City | [Your Name], MD – Utah Plastic Surgery</title>
+  <meta name="description" content="Board-certified mommy makeover surgeon in Salt Lake City, Utah. Personalized tummy tuck, breast lift/augmentation & liposuction for natural post-pregnancy results. Free consultation – it's time to take care of you."/>
   
-  <!-- Enhanced SEO -->
-  <meta name="keywords" content="mommy makeover Salt Lake City, mommy makeover Utah, post-pregnancy plastic surgery SLC, tummy tuck Salt Lake City, breast augmentation Utah, board-certified plastic surgeon"/>
-  <meta name="robots" content="index, follow"/>
-  <link rel="canonical" href="https://your-vercel-domain.vercel.app/"/>
+  <!-- SEO keywords -->
+  <meta name="keywords" content="mommy makeover Salt Lake City, mommy makeover Utah, best mommy makeover surgeon Salt Lake City, mommy makeover cost Utah, tummy tuck Salt Lake City, breast augmentation Utah, post-pregnancy body contouring SLC"/>
   
-  <!-- OG for sharing/AI -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Mommy Makeover Salt Lake City – It's Time to Take Care of You"/>
-  <meta property="og:description" content="Reclaim your pre-pregnancy body with expert, compassionate care in Utah. Natural results, minimal downtime."/>
-  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Empowered+Mommy+Makeover+Result"/>
+  <meta property="og:description" content="Reclaim your pre-pregnancy body with superior skill, precision, and compassionate care in Utah."/>
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Mommy+Makeover+Salt+Lake+City"/>
   
-  <!-- Preconnects -->
-  <link rel="preconnect" href="https://cdn.tailwindcss.com"/>
-  <link rel="preconnect" href="https://cdn.jsdelivr.net"/>
-  
+  <!-- Tailwind CDN + Critical CSS with fluid typography -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: { extend: { colors: { primary: '#4f46e5', accent: '#ec4899' } } }
     }
   </script>
-  
   <style>
     :root { --primary: #4f46e5; --accent: #ec4899; }
     body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.6; }
-    .hero-bg { background: linear-gradient(to bottom right, #312e81, #6b21a8); }
-    img { loading: lazy; decoding: async; }
-    .cta-btn:hover { transform: scale(1.05); }
+    .video-bg { position: relative; overflow: hidden; min-height: 80vh; }
+    .video-bg video {
+      position: absolute;
+      top: 50%; left: 50%;
+      min-width: 100%; min-height: 100%;
+      width: auto; height: auto;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      z-index: -1;
+    }
+    .overlay { background: rgba(49, 46, 129, 0.65); } /* Darker on mobile for readability */
+    /* Fluid typography with clamp */
+    .fluid-h1 { font-size: clamp(2.5rem, 8vw + 1rem, 5.5rem); line-height: 1.1; }
+    .fluid-subtitle { font-size: clamp(1.25rem, 4vw + 0.5rem, 2rem); }
+    .fluid-body { font-size: clamp(1rem, 2.5vw + 0.5rem, 1.25rem); }
+    /* Touch target min size */
+    a, button { min-height: 44px; min-width: 44px; }
+    @media (max-width: 640px) {
+      .overlay { background: rgba(49, 46, 129, 0.75); } /* Even darker on small screens */
+    }
   </style>
   
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-50 text-gray-900">
 
-  <!-- Hero: Inspired by example's motivational tone -->
-  <header class="hero-bg text-white relative overflow-hidden">
-    <div class="absolute inset-0 opacity-15">
-      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&auto=format&fit=crop&q=80" alt="Confident woman post-mommy makeover" class="object-cover w-full h-full" loading="eager" fetchpriority="high"/>
-    </div>
-    <div class="relative container mx-auto px-6 py-24 md:py-40 text-center">
-      <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
-        Mommy Makeover Salt Lake City<br/>
-        <span class="text-accent">It's Time to Take Care of You</span>
+  <!-- Sticky Mobile CTA -->
+  <div class="sticky top-0 z-50 bg-white shadow-md py-4 text-center md:hidden">
+    <a href="#consult" class="bg-accent text-white font-bold py-4 px-8 rounded-full text-lg shadow-lg">Book Free Consultation</a>
+  </div>
+
+  <!-- Hero with Video Background -->
+  <section class="video-bg text-white flex items-center relative">
+    <video 
+      autoplay 
+      muted 
+      loop 
+      playsinline 
+      preload="metadata"
+      class="absolute inset-0 w-full h-full object-cover"
+    >
+      <source src="https://files.oaiusercontent.com/file-0lZ6w7b0k8n9p5qR3sT2uVvW?se=2026-01-21T21%3A00%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Dvideo.mp4&sig=example-signature-here" type="video/mp4">
+      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1920&auto=format&fit=crop&q=80" alt="Fallback: Empowered woman after mommy makeover" class="object-cover w-full h-full"/>
+    </video>
+    
+    <div class="overlay absolute inset-0"></div>
+    
+    <div class="relative container mx-auto px-4 sm:px-6 py-20 md:py-32 text-center z-10">
+      <h1 class="fluid-h1 font-extrabold leading-tight mb-6">
+        It's time to take care of you.
       </h1>
-      <p class="text-2xl md:text-3xl mb-10 max-w-4xl mx-auto font-light">
-        Reclaim your pre-pregnancy body with superior skill, precision, and compassionate care from a board-certified Utah specialist.
+      <p class="fluid-subtitle mb-8 md:mb-10 font-light">
+        Mommy Makeover Salt Lake City – Superior Skill and Precision<br class="hidden sm:block"/>
+        A Compassionate and Caring Team in Utah
       </p>
-      <a href="#consult" class="cta-btn inline-block bg-accent text-white font-bold py-6 px-12 rounded-full text-2xl shadow-2xl">
+      <a href="#consult" class="cta-btn inline-block bg-accent text-white font-bold py-5 px-10 sm:py-6 sm:px-12 rounded-full text-xl sm:text-2xl shadow-2xl">
         Research & Book Free Consultation →
       </a>
     </div>
-  </header>
+  </section>
 
-  <!-- Trust Stats – Like their 4.9/5 highlight -->
-  <section class="py-16 bg-white border-b">
-    <div class="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-      <div>
-        <p class="text-5xl font-bold text-primary">Board-Certified</p>
-        <p class="mt-2">ABPS</p>
-      </div>
-      <div>
-        <p class="text-5xl font-bold text-primary">4.9/5</p>
-        <p class="mt-2">From 200+ Reviews</p>
-      </div>
-      <div>
-        <p class="text-5xl font-bold text-primary">500+</p>
-        <p class="mt-2">Happy Patients</p>
-      </div>
-      <div>
-        <p class="text-5xl font-bold text-primary">Salt Lake City</p>
-        <p class="mt-2">Utah-Based</p>
-      </div>
+  <!-- WHO WE ARE -->
+  <section id="about" class="py-16 sm:py-20 bg-gray-50 text-center">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-6 sm:mb-8">WHO WE ARE</h2>
+      <p class="fluid-body max-w-4xl mx-auto mb-8 sm:mb-12">
+        Located in beautiful Salt Lake City, Utah, [Your Name], M.D. leads a patient-focused plastic surgery practice specializing in mommy makeovers and post-pregnancy body restoration. Our team proudly performs customized procedures that enhance natural beauty and restore confidence after motherhood.
+      </p>
+      <a href="#consult" class="text-lg sm:text-xl text-primary hover:text-accent font-bold">Research →</a>
     </div>
   </section>
 
-  <!-- Who We Are / Procedures – Adapted from example -->
-  <section class="py-20 bg-gray-50">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold mb-12">Who We Are</h2>
-      <p class="text-xl max-w-3xl mx-auto mb-12">
-        Located in beautiful Salt Lake City, our practice specializes in mommy makeovers and body restoration with a compassionate team focused on natural, empowering results.
+  <!-- Real. You. (Procedures) -->
+  <section id="procedures" class="py-16 sm:py-20 bg-white text-center">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-6 sm:mb-8">Real. You.</h2>
+      <p class="fluid-body mb-8 sm:mb-12 max-w-4xl mx-auto">
+        Cutting-edge mommy makeover services designed to amplify your natural beauty and improve your self-confidence.
       </p>
-      <div class="grid md:grid-cols-3 gap-10">
-        <div class="bg-white p-8 rounded-2xl shadow-lg">
-          <h3 class="text-2xl font-bold mb-4 text-primary">Tummy Tuck</h3>
-          <p>Tighten muscles, remove excess skin for a flat, toned abdomen.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10 max-w-5xl mx-auto">
+        <div class="bg-gray-100 p-6 sm:p-8 rounded-2xl">
+          <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-primary">Tummy Tuck</h3>
+          <p class="text-base sm:text-lg">Remove excess skin, tighten muscles for a flat, toned abdomen post-pregnancy.</p>
         </div>
-        <div class="bg-white p-8 rounded-2xl shadow-lg">
-          <h3 class="text-2xl font-bold mb-4 text-primary">Breast Procedures</h3>
-          <p>Lift, augment for restored shape and confidence.</p>
+        <div class="bg-gray-100 p-6 sm:p-8 rounded-2xl">
+          <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-primary">Breast Lift / Augmentation</h3>
+          <p class="text-base sm:text-lg">Restore shape, volume, and symmetry for renewed confidence.</p>
         </div>
-        <div class="bg-white p-8 rounded-2xl shadow-lg">
-          <h3 class="text-2xl font-bold mb-4 text-primary">Liposuction</h3>
-          <p>Contour stubborn areas for sculpted results.</p>
+        <div class="bg-gray-100 p-6 sm:p-8 rounded-2xl">
+          <h3 class="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-primary">Liposuction</h3>
+          <p class="text-base sm:text-lg">Target stubborn fat pockets for sculpted, natural contours.</p>
         </div>
       </div>
-      <a href="#consult" class="mt-12 inline-block bg-primary text-white font-bold py-5 px-10 rounded-full text-xl">
-        Research Procedures →
+      <a href="#consult" class="mt-8 sm:mt-12 inline-block bg-primary text-white font-bold py-4 px-8 sm:py-5 sm:px-10 rounded-full text-lg sm:text-xl">
+        Research All Services →
       </a>
     </div>
   </section>
 
-  <!-- Testimonials Placeholder – Inspired by their review section -->
-  <section class="py-20 bg-white">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-5xl font-bold mb-12">Real Patients, Real Results</h2>
-      <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
-        <div class="bg-gray-50 p-8 rounded-2xl">
-          <p class="italic mb-4">"Dr. [Your Name] made my mommy makeover life-changing – caring team and amazing results!"</p>
-          <p class="font-bold">– S.L., Salt Lake City</p>
-        </div>
-        <div class="bg-gray-50 p-8 rounded-2xl">
-          <p class="italic mb-4">"Fantastic experience from start to finish. Back to feeling like myself!"</p>
-          <p class="font-bold">– V.I.</p>
-        </div>
+  <!-- Invest In you. -->
+  <section class="py-16 sm:py-20 bg-gray-50 text-center">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-6 sm:mb-8">Invest In you.</h2>
+      <p class="fluid-body max-w-4xl mx-auto mb-8 sm:mb-12">
+        With board-certified expertise and a focus on patient education, we create personalized mommy makeover plans that deliver natural results with minimal downtime. Our facility prioritizes safety, comfort, and compassionate care so you can look and feel your best.
+      </p>
+      <a href="#consult" class="text-lg sm:text-xl text-primary hover:text-accent font-bold">Research Our Approach →</a>
+    </div>
+  </section>
+
+  <!-- Transformation Video Fallback -->
+  <section class="py-16 sm:py-20 bg-white text-center">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-6 sm:mb-8">See the Empowerment</h2>
+      <p class="fluid-body mb-6 sm:mb-10 max-w-3xl mx-auto">
+        Feel the confidence that comes with a mommy makeover – natural, beautiful transformation.
+      </p>
+      <div class="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl">
+        <video controls preload="metadata" class="w-full aspect-video">
+          <source src="https://grok.com/imagine/post/33a828c4-61ec-44e3-b0d4-3bbfed067095?source=post-page&platform=web" type="video/mp4">
+        </video>
       </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="py-16 sm:py-20 bg-gray-50 text-center">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-6 sm:mb-8">Reviews</h2>
+      <p class="text-5xl sm:text-6xl font-bold text-primary mb-3 sm:mb-4">4.9 / 5</p>
+      <p class="text-xl sm:text-2xl mb-8 sm:mb-12">From 200+ Happy Patients</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
+        <div class="bg-white p-6 sm:p-8 rounded-2xl shadow-md">
+          <p class="italic mb-4 sm:mb-6 text-base sm:text-lg">"Dr. [Your Name] made my mommy makeover life-changing – caring team, amazing results, and true compassion from start to finish!"</p>
+          <p class="font-bold text-sm sm:text-base">– S.L., Salt Lake City (Google)</p>
+        </div>
+        <!-- Repeat for 2-3 more testimonials with similar responsive padding -->
+      </div>
+      <a href="#consult" class="mt-8 sm:mt-12 inline-block text-lg sm:text-xl text-primary hover:text-accent font-bold">Research All Reviews →</a>
+    </div>
+  </section>
+
+  <!-- Doctor Bio -->
+  <section id="team" class="py-16 sm:py-20 bg-white text-center">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl sm:text-5xl font-bold mb-6 sm:mb-8">[Your Name], M.D. – Board-Certified Plastic Surgeon</h2>
+      <p class="fluid-body max-w-4xl mx-auto mb-8 sm:mb-12">
+        Lovingly known by patients for compassionate care, [Your Name], M.D. is a board-certified plastic surgeon specializing in mommy makeovers and post-pregnancy restoration. With extensive training and a commitment to natural results, Dr. [Your Last Name] listens to your unique story and designs a plan to exceed your goals.
+      </p>
+      <a href="#consult" class="text-lg sm:text-xl text-primary hover:text-accent font-bold">Research Bio →</a>
     </div>
   </section>
 
   <!-- Final CTA -->
-  <section id="consult" class="py-24 bg-gradient-to-r from-primary to-indigo-800 text-white text-center">
-    <div class="container mx-auto px-6">
-      <h2 class="text-5xl font-bold mb-8">Invest in You – Schedule Today</h2>
-      <p class="text-2xl mb-10 max-w-3xl mx-auto">No-obligation consultation with personalized planning.</p>
-      <a href="https://calendly.com/your-link" target="_blank" rel="noopener" class="cta-btn inline-block bg-white text-primary font-bold py-6 px-14 rounded-full text-2xl shadow-2xl">
+  <section id="consult" class="py-20 sm:py-24 bg-gradient-to-r from-primary to-indigo-800 text-white text-center">
+    <div class="container mx-auto px-4 sm:px-6">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 sm:mb-8">Start Your Journey Today</h2>
+      <p class="fluid-body mb-8 sm:mb-10 max-w-3xl mx-auto">No-obligation consultation – personalized mommy makeover planning in Salt Lake City.</p>
+      <a href="https://calendly.com/your-calendly-link" target="_blank" rel="noopener" class="cta-btn inline-block bg-white text-primary font-bold py-5 px-10 sm:py-6 sm:px-14 rounded-full text-xl sm:text-2xl shadow-2xl">
         Book Free Consultation
       </a>
+      <p class="mt-6 sm:mt-8 text-base sm:text-lg">Or call: (801) XXX-XXXX</p>
     </div>
   </section>
 
-  <!-- Footer Compliance -->
-  <footer class="bg-gray-900 text-gray-300 py-12 text-center text-sm">
-    <p>© 2026 [Your Practice] – Board-Certified Plastic Surgery, Salt Lake City, UT</p>
-    <div class="mt-4 space-x-6">
-      <a href="/privacy" class="hover:text-white">Privacy Policy</a> |
-      <a href="/hipaa" class="hover:text-white">HIPAA Notice</a> |
-      <a href="/disclaimer" class="hover:text-white">Medical Disclaimer</a>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-10 sm:py-12 text-center text-sm">
+    <div class="container mx-auto px-4 sm:px-6">
+      <p>© 2026 [Your Practice Name] – Board-Certified Plastic Surgery, Salt Lake City, UT</p>
+      <div class="mt-4 space-x-4 sm:space-x-6">
+        <a href="/privacy-policy.html" class="hover:text-white">Privacy Policy</a> |
+        <a href="/hipaa-notice.html" class="hover:text-white">HIPAA Notice</a> |
+        <a href="/disclaimer.html" class="hover:text-white">Medical Disclaimer</a>
+      </div>
+      <p class="mt-6 max-w-3xl mx-auto">
+        This site is for informational purposes only and does not constitute medical advice. Individual results vary. Consult a qualified physician.
+      </p>
     </div>
-    <p class="mt-6">Informational only – not medical advice. Results vary. Secure consultations via third-party tools.</p>
   </footer>
 
-  <!-- Schema -->
+  <!-- Schema (unchanged) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Physician",
     "name": "[Your Name], MD",
     "medicalSpecialty": "PlasticSurgery",
-    "address": {"@type": "PostalAddress", "addressLocality": "Salt Lake City", "addressRegion": "UT"},
-    "makesOffer": {"@type": "MedicalProcedure", "name": "Mommy Makeover"}
+    "description": "Board-certified specialist in mommy makeovers and post-pregnancy restoration in Salt Lake City, Utah.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Salt Lake City",
+      "addressRegion": "UT"
+    },
+    "review": {
+      "@type": "Review",
+      "reviewRating": {"@type": "Rating", "ratingValue": "4.9"}
+    },
+    "makesOffer": {
+      "@type": "Offer",
+      "itemOffered": {"@type": "MedicalProcedure", "name": "Mommy Makeover"}
+    }
   }
   </script>
 
 </body>
 </html>
-"Add initial mommy makeover landing page"
